@@ -1,0 +1,16 @@
+# beta(s) is Dirichlet beta function of integral from 0 to inf;
+# beta(s,x) is incomplete Dirichlet beta function of integral from x to oo;
+# beta(s,0,x) is incomplete Dirichlet beta function of integral from 0 to x;
+# beta(s,a,x) is incomplete Dirichlet beta function of integral from a to x;
+
+
+#beta(s_,a_,b_):=beta(s,a)-beta(s,b);
+beta(s_,a_,a_) :=0;
+beta(s_,0,b_):=beta(s)-beta(s,b);
+beta(s_,0,inf) := beta(s);
+
+beta(s_,0) :=beta(s);
+beta(s_,oo) :=0;
+
+beta(0):=1/2;
+beta(1):=pi/4;

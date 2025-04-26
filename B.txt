@@ -1,0 +1,6 @@
+# Beta(a,b) is Beta function of integral from 0 to 1;
+# Beta(a,b,x) is incomplete Beta function of integral from 0 to x;
+
+B(a_,b_,0) :=0;
+B(a_,b_,1) := B(a,b);
+B(a_,b_,inf) := B(a,b);

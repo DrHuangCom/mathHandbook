@@ -1,0 +1,43 @@
+
+alternate(a_*b_):=alternate(a)*alternate(b);
+alternate(a_+b_):=alternate(a)+alternate(b);
+
+alternate(zeta(n_,a_,x_)):=H(n,x)-H(n,a-1);
+alternate(zeta(n_,c_)):=zeta(n)-zeta(n,c+1);
+alternate(H(n_,a_,x_)):=H(n,x)-H(n,a-1);
+alternate(H(n_,x_)):=zeta(n)-zeta(n,x+1);
+alternate(erf(x_)) := 1-erfc(x);
+alternate(erfc(x_)) := 1-erf(x);
+alternate(Phi(x_)) := erfc(-sqrt(2)*x/2)/2;
+alternate(li(x_)) := Ei(log(x));
+alternate(zeta(x_)) := lims(H(x),x=oo);
+alternate(factorial(x_)) := gamma(x+1);
+alternate(gamma(x_)) := gamma(x,y)+gamma(x,0,y);
+alternate(hypot(x_,y_)) := abs(x,y);
+alternate(exp(x_)) := lims((1+k*x)^(1/k),k=0);
+
+alternate(cis(x_)) := cos(x)+i*sin(x);
+alternate(sinc(x_,y_)) := sin(abs(x,y))/abs(x,y);
+alternate(sinc(x_)) := sin(x)/x;
+alternate(sin(x_)) := 1/csc(x);
+alternate(cos(x_)) := 1/sec(x);
+alternate(tan(x_)) := 1/cot(x);
+alternate(cot(x_)) := 1/tan(x);
+alternate(sec(x_)) := 1/cos(x);
+alternate(csc(x_)) := 1/sin(x);
+
+alternate(asin(x_)) := pi/2-acos(x);
+alternate(acos(x_)) := pi/2-asin(x);
+alternate(atan(x_)) := acot(1/x);
+alternate(atan2(y_,x_)) := atan(y/x);
+#alternate(acot(x_)) := atan(1/x);
+#alternate(asec(x_)) := acos(1/x);
+#alternate(acsc(x_)) := asin(1/x);
+
+alternate(sinh(x_)) := 1/csch(x);
+alternate(cosh(x_)) := 1/sehc(x);
+alternate(tanh(x_)) := 1/coth(x);
+alternate(coth(x_)) := 1/tanh(x);
+alternate(sech(x_)) := 1/cosh(x);
+alternate(csch(x_)) := 1/sinh(x);
+

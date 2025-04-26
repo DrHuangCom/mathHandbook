@@ -1,0 +1,3 @@
+acos(1/x_):=asec(x);
+acos(sin(x_)):=x+pi/2;
+acos(1):=0;

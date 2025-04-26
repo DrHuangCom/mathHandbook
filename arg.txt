@@ -1,0 +1,5 @@
+# arg(x) is Complex arguement function;
+
+arg(Complex(x_,y_)):=atan2(y,x);
+arg(point(x_,y_)):=atan2(y,x);
+arg(vector(x_,y_)):=atan2(y,x);

@@ -1,0 +1,4 @@
+# atanhi(x) is integral of atanh(x)/x;
+
+
+atanhi(x_) := polylog(2,x)/2-polylog(2,-x)/2;

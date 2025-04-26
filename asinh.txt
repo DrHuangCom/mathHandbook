@@ -1,0 +1,2 @@
+asinh(1/x_):=acsch(x);
+# asinh(sinh(x_)):=x;

@@ -1,0 +1,2 @@
+asin(1/x_):=acsc(x);
+asin(cos(x_)):=x-pi/2;

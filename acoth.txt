@@ -1,0 +1,2 @@
+acoth(1/x_):=atanh(x);
+acoth(-x_):= -acoth(x);

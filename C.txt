@@ -1,0 +1,3 @@
+# C(n,x) = combination(n,x);
+
+C(n_,x_):=combination(n,x);

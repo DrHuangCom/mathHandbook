@@ -1,0 +1,5 @@
+
+atanh(1/x_):=acoth(x);
+atanh(-x_):= -atanh(x);
+
+atanh(1):= oo;

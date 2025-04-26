@@ -1,0 +1,2 @@
+besselI(a_,x_):= if(a<0, besselI(-a,x) );
+besselI(1/2,x_):=sqrt(2/pi/x)*sinh(x);

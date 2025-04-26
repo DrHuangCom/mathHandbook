@@ -1,0 +1,2 @@
+acot(1/x_):=atan(x);
+acot(-x_):= -acot(x);

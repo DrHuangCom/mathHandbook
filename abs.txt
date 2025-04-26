@@ -1,0 +1,11 @@
+# abs(x) is abolute value function;
+# abs(inverseabs(x_)):=x;
+# abs(zero) := zero;
+# abs(-zero) := -zero;
+# abs(x_,y_):=hypot(x,y)=sqrt(x^2+y^2);
+# abs(x_) :=  If(x>0, x, If(x<0,-x));
+
+abs(a_*b_):= abs(a)*abs(b);
+abs(point(x_,y_)):=abs(x,y);
+abs(vector(x_,y_)):=abs(x,y);
+abs(vector(x_,y_,z_)):=abs(x,y,z);

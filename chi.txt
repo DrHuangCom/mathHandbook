@@ -1,0 +1,4 @@
+#	chi(x) is the cosh integral, integral of cosh(x)/x;
+
+chi(0):=0;
+chi(inf):= inf;

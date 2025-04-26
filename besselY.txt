@@ -1,0 +1,2 @@
+besselY(a_,x_):= if(a<0, -besselY(-a,x) );
+besselY(1/2,x_):= -sqrt(2/pi/x)*cos(x);

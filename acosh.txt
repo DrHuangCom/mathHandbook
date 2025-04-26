@@ -1,0 +1,4 @@
+acosh(1/x_):=asech(x);
+
+# acosh(cosh(x_)):=x;
+acosh(1):=0;

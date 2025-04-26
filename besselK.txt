@@ -1,0 +1,2 @@
+besselK(a_,x_):= if(a<0, besselK(-a,x) );
+besselK(1/2,x_):= sqrt(2/pi/x)*exp(-x);

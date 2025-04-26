@@ -1,0 +1,6 @@
+# asym(f) is asymptote;
+
+
+asym(f_,x_):=block(aa:=lim(f/x,x=oo),bb:=lim(f-aa*x,x=oo),aa*x+bb);
+asym(f_/g_):=block(aa:=lim(f/g/x,x=oo),bb:=lim((f-aa*x*g)/g,x=oo),aa*x+bb);
+asym(1/f_*g_):=block(aa:=lim(g/f/x,x=oo),bb:=lim(expand(g-aa*x*f)/f,x=oo),aa*x+bb);

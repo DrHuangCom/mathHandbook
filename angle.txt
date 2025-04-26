@@ -1,0 +1,3 @@
+angle(a_+b_*i):=atan2(b,a);
+angle(point(x_,y_)):=atan2(y,x);
+angle(vector(x_,y_)):=atan2(y,x);

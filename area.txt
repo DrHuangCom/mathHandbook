@@ -1,0 +1,14 @@
+
+area(y_):=area(y,x,-1,1);
+
+area(y_,x_):=area(y,x,-1,1);
+area(y_,a_,b_):=area(y,x,a,b);
+area(y1_ and y2_,a_,b_):= abs(area(y1,x,a,b)-area(y2,x,a,b));
+area(triangle(high_,length_)):=high*length/2;
+area(sphere(r_)):=4*pi*r^2;
+area(squres(length_)):=length^2;
+area(circles(r_)):=pi*r*r;
+area(ovals(rx_,ry_)):=pi*rx*ry;
+area(x^2+y^2=r2_):=pi*r2;
+area(x^2+y^2+r2_):= pi*sqrt(-r2);
+area(a_*x^2+b_*y^2=r2_):=pi*sqrt(a*b)*r2;

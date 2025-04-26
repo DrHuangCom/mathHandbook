@@ -1,0 +1,3 @@
+chop(x_+y_):=chop(x)+chop(y);
+chop(x_*y_):=chop(x)*chop(y);
+chop(10^n_):=if(n<-10,0);

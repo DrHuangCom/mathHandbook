@@ -1,0 +1,3 @@
+assume(x_) := (x:=true);
+assume(x_, y_) := block(x:=true,y:=true, assumed);
+assume(x_, y_, z_) := block(x:=true,y:=true,z:=true, assumed);

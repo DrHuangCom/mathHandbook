@@ -1,0 +1,5 @@
+
+atan(1/x_):=acot(x);
+atan(-x_):= -atan(x);
+
+atan(1):= pi/4;

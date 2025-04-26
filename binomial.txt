@@ -1,0 +1,2 @@
+binomial(n_,k_) := if(isnumber(k), fallingfactorial(n,k)/k!);
+#binomial(n_,k_) := n!/((n-k)!*k!);
